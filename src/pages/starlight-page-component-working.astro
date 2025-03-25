@@ -1,0 +1,13 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import { getEntry, render } from 'astro:content';
+const entry = await getEntry('docs', 'example-working'); // here is the diff
+if (!entry) {
+  throw new Error('Could not find example docs entry');
+}
+const { Content, headings, remarkPluginFrontmatter } = await render(entry);
+---
+
+<StarlightPage frontmatter={remarkPluginFrontmatter} headings={headings}>
+	<Content />
+</StarlightPage>
