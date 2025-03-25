@@ -1,0 +1,18 @@
+{
+  "name": "starlight-toc-overview-link-frontmatter",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.32.3",
+    "astro": "^5.1.5",
+    "sharp": "^0.32.5",
+    "starlight-toc-overview-customizer": "^0.1.0"
+  }
+}
